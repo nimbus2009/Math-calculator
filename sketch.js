@@ -1,6 +1,8 @@
 var num1;
 var num2;
 
+var answer=0;
+
 function setup() {
   createCanvas(400, 400);
   num1=createInput();
@@ -30,17 +32,25 @@ function draw() {
   background(220);
   n1=parseInt(num1.value());
   n2=parseInt(num2.value());
+
+
+  text("Answer- " + answer,10,220);
+
 }
 
 function addition() {
-  console.log(n1+n2);
+  answer=n1+n2;
+  console.log(answer);
 }
 function sub(){
-  console.log(n1-n2)
+  answer=n1-n2;
+  console.log(answer)
 }
 function mult() {
-  console.log(n1*n2);
+  answer=n1*n2;
+  console.log(answer);
 }
 function div() {
-  console.log(n1/n2);
+  answer=n1/n2;
+  console.log(answer);
 }
