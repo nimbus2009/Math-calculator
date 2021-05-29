@@ -12,7 +12,7 @@ function setup() {
   num1.style("background-color: PaleGoldenRod;color: black");
   num2.style("background-color: PaleGoldenRod;color: black");
   num1.size(150,15);
-  num2.size(150,15);
+  num2.size(150,15); 
 
   add=createButton("Add");
   add.position(5,120);
@@ -42,8 +42,8 @@ function setup() {
 
 function draw() {
   background(220);
-  n1=parseInt(num1.value());
-  n2=parseInt(num2.value());
+  n1=parseFloat(num1.value());
+  n2=parseFloat(num2.value());
 
   fill("maroon");
   stroke("maroon");
